@@ -1,4 +1,4 @@
-# bpclass-front
+# videira-cafe-front
 
 ## Project setup
 ```
