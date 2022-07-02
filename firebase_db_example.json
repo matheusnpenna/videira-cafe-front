@@ -1,0 +1,41 @@
+{
+  "user-data": {
+    "matheusnpenna@gmail.com": {
+      "name": "Matheus Penna",
+      "email": "matheusnpenna@gmail.com",
+      "created_at": "2022-06-27T10:40:00Z"
+    }
+  },
+  "products": {
+    "pao-de-queijo": {
+      "name": "PÃO DE QUEIJO",
+      "created_at": "2022-06-27T10:40:00Z"
+    }
+  },
+  "inventory": {
+    "2022-06-27": {
+      "created_at": "2022-06-27T10:40:00Z",
+      "total": 20,
+      "per_product": [
+        {
+          "name": "PÃO DE QUEIJO",
+          "product_id": "pao-de-queijo",
+          "liters": null,
+          "amount": 10
+        },
+        {
+          "name": "PASTEL DE QUEIJO",
+          "product_id": "pastel-de-queijo",
+          "liters": null,
+          "amount": 10
+        },
+        {
+          "name": "CALDO DE AIMPIM",
+          "product_id": "caldo-de-aimpim",
+          "liters": 2,
+          "amount": 10
+        }
+      ]
+    }
+  }
+}

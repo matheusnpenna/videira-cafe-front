@@ -1,0 +1,30 @@
+$marginSideLg: 96;
+$marginSideMd: calc($marginSideLg * 0.5);
+$marginSideSm: calc($marginSideLg * 0.2);
+
+.container {
+  margin-left: $marginSideSm+px;
+  margin-right: $marginSideSm+px;
+  width: inherit;
+
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  @media (min-width: 576px) {
+    margin-left: $marginSideMd+px;
+    margin-right: $marginSideMd+px;
+  }
+  
+  @media (min-width: 992px) {
+    margin-left: $marginSideLg+px;
+    margin-right: $marginSideLg+px;
+  }
+
+  &.no-right {
+    margin-right: 0 !important;
+  }
+
+  &.no-left {
+    margin-left: 0 !important;
+  }
+}

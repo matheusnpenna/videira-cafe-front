@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "videiracafe-4ee95"
+  },
+  "targets": {
+    "videiracafe": {
+      "hosting": {
+        "videiracafe": [
+          "videiracafe"
+        ]
+      }
+    }
+  }
+}

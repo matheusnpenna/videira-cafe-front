@@ -1,0 +1,15 @@
+$enable-negative-margins: true;
+
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Inter:wght@400;500;600;700&family=Josefin+Slab:wght@400;700&display=swap);
+
+@import "variables";
+
+@import "bootstrap/scss/bootstrap";
+
+@import "spacement";
+
+@import "globals";
+
+:root {
+  --plyr-color-main: #F45900;
+}
