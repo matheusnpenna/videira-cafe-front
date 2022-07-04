@@ -7,6 +7,7 @@ import state from "./state";
 
 import user from "./user";
 import product from "./product";
+import inventory from "./inventory";
 
 export default createStore({
   state,
@@ -16,5 +17,6 @@ export default createStore({
   modules: {
     user,
     product,
+    inventory,
   },
 });

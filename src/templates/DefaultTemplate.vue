@@ -60,7 +60,7 @@
     </aside>
 
     <main class="flex-fill ps-5">
-      <div class="position-relative slot-wrapper ps-5 pt-4">
+      <div class="position-relative slot-wrapper px-5 pt-4">
         <slot />
         <confirmation
           v-model="logoutDialog"

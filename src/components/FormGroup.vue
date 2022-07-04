@@ -26,22 +26,22 @@
       </el-date-picker>
     </div>
 
-    <select
+    <el-select
       v-if="select"
-      class="form-control"
       :class="classObject"
       :id="id"
       v-model="innerValue"
     >
-      <option value="" :disabled="!nullable">{{ placeholder }}</option>
-      <option
+      <el-option value="" :disabled="!nullable">{{ placeholder }}</el-option>
+      <el-option
         v-for="(option, index) in options"
         :key="index"
+        :label="option.name"
         :value="option.id"
       >
         {{ optionLabelFunction(option) }}
-      </option>
-    </select>
+      </el-option>
+    </el-select>
     <the-mask
       v-else-if="mask.length"
       :mask="mask"
@@ -71,21 +71,20 @@
       @country-changed="countryChanged"
       @validate="(obj) => $emit('validate', obj)"
     />
-    <textarea
+    <el-input
       v-else-if="textarea"
+      type="textarea"
       v-model="innerValue"
-      class="form-control"
       :class="classObject"
       :id="id"
-      :type="type"
       :placeholder="placeholder"
       :readonly="readonly"
+      :autosize="{ minRows: 2, maxRows: 20 }"
       :disabled="disabled"
     />
     <div class="form-password-wrapper" v-else-if="type === 'password'">
-      <input
+      <el-input
         v-model="innerValue"
-        class="form-control"
         :class="classObject"
         :id="id"
         :type="!showPassword && type"
@@ -116,7 +115,7 @@
 
     <div class="radio-group text-dark row pt-2" v-else-if="type === 'radio'">
       <div v-for="option in options" :key="option.name" class="col-6">
-        <input
+        <el-input
           :id="option.name"
           type="radio"
           :value="option.name"
@@ -143,10 +142,9 @@
       :disabled="disabled"
     />
 
-    <input
+    <el-input
       v-else
       v-model="innerValue"
-      class="form-control"
       :class="classObject"
       :id="id"
       :type="type"
@@ -415,12 +413,6 @@ export default {
       padding-right: 32px;
     }
   }
-
-  
-  .empty-borders {
-    border: 1px solid #767676 !important;
-  }
-
   .border-none {
     border: none !important;
 
@@ -527,10 +519,6 @@ export default {
     letter-spacing: 0.015em;
     color: #000;
     font-size: 14px;
-  }
-
-  .normal-borders {
-    border: 1px solid #cfcfcf;
   }
 
   .login-borders {

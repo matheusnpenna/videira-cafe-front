@@ -32,6 +32,15 @@ const routes = [
     },
   },
   {
+    path: "/estoque/novo",
+    name: "inventory-new",
+    component: () => import("../views/NewInventoryView.vue"),
+    meta: {
+      template: DefaultTemplate,
+      protected: true,
+    },
+  },
+  {
     path: "/login",
     name: "login",
     component: () => import("../views/LoginView.vue"),

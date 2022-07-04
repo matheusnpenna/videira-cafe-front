@@ -57,9 +57,12 @@ p {
   color: #000;
 }
 
-.btn-outline-primary {
-  border-radius: 30px !important;
+.btn-dot-menu {
+  font-weight: bold !important;
+  font-size: 30px !important;
+  color: #000 !important;
 }
+
 
 .chip-gray {
   border-radius: 10px;
@@ -151,7 +154,6 @@ button, a, .btn {
 }
 
 .btn {
-  border-radius: 16px;
   position: relative;
   min-height: 41px;
   min-width: fit-content;
@@ -168,10 +170,6 @@ button, a, .btn {
   }
 }
 
-.btn-primary {
-  border-radius: 30px;
-}
-
 .btn-play {
   min-height: 49px;
   min-width: 49px;
@@ -184,7 +182,6 @@ button, a, .btn {
 }
 
 .btn-outline-light {
-  border-radius: 8px;
   color: white;
   
   &:hover {
@@ -226,11 +223,6 @@ button, a, .btn {
   border: none;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05) !important;
   border-radius: 8px;
-}
-
-.form-control {
-  border-radius: 16px;
-  border: 1px solid #C8D6E5;
 }
 
 .shadow {
