@@ -41,6 +41,15 @@ const routes = [
     },
   },
   {
+    path: "/estoque/editar/:id",
+    name: "inventory-edit",
+    component: () => import("../views/EditInventoryView.vue"),
+    meta: {
+      template: DefaultTemplate,
+      protected: true,
+    },
+  },
+  {
     path: "/login",
     name: "login",
     component: () => import("../views/LoginView.vue"),

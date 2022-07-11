@@ -27,7 +27,7 @@
             <template #dropdown>
               <el-dropdown-menu class="wrapper-dropdown">
                 <el-dropdown-item>
-                  <button class="btn text-dark">
+                  <button class="btn text-dark" @click="toEdit(inventory.id)">
                     <i class="icon-pencil me-2" /> Editar
                   </button>
                 </el-dropdown-item>
@@ -57,6 +57,9 @@ export default {
     ...mapState("inventory", ["inventories"]),
   },
   methods: {
+    toEdit(id) {
+      this.$router.push({ name: "inventory-edit", params: { id } });
+    },
     formatTimestamp(date_time) {
       return moment(date_time.toDate()).format("DD/MM/YYYY");
     },
